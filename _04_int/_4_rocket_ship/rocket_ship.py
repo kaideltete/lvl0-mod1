@@ -4,6 +4,7 @@ window_width = 800
 window_height = 800
 root = Tk()
 
+
 canvas = Canvas(root, width=window_width, height=window_height, borderwidth=0, highlightthickness=0, bg="#000050")
 canvas.grid()
 
@@ -24,7 +25,14 @@ def mouse_pressed(event):
     
     # 1. Add details to your rocket to make it look better. You can look at
     #    rocket.png for inspiration.
-    
+    my_can = Canvas(root)
+    root.pack()
+    canvas.create_oval(20,20,100,100)
+
+
+    #points_2 = [x, y, x - 50, y + 100, x + 50, y + 100]
+    #canvas.create_polygon(points, fill='yellow', width=2)
+
     # 2. Modify the locations of the shapes above so the rocket will be drawn
     #    where the mouse is clicked
     

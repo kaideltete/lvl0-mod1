@@ -31,7 +31,7 @@ if __name__ == '__main__':
     q10 = simpledialog.askstring(title='10?', prompt="What's green and then red?")
 
 
-
+    
     if (q1=="are you asleep yet"):
         u_score+=1
     if (q2=="The future"):
